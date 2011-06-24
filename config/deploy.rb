@@ -6,7 +6,7 @@ set :scm, :git
 
 role :web, "briansamson.com"                          # Your HTTP server, Apache/etc
 
-set :deploy_to, "/vhost/briansamson.com/touch-resume/"
+set :deploy_to, "/u/apps/touch-resume"
 
 # if you're still using the script/reaper helper you will need
 # these http://github.com/rails/irs_process_scripts

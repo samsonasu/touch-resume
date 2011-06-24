@@ -1,20 +1,86 @@
-BS.ResumeData = {
-  name: "Brian Samson",
-  phone: "602.690.7930",
-  email: 'brian@briansamson.com',
-  logo: 'briansamson-logo-small.jpg',
-  objective: "A challenging software engineering position either working independently or on a motivated, experienced, and intelligent team.",
-  experience: [{
-    company: "Brian Samson Software Consulting, LLC",
-    title: "Owner",
-    start: "March 2011",
-    end: "Present",
-    description: "Freelance software consulting for small and medium size businesses. I can develop almost anything you can imagine, from custom Android applications to full-featured web applications in Java, Ruby on Rails, PHP, or ASP.NET. As the principle owner, I take pride and responsibility in delivering nothing but the highest quality software to all my clients."
+{
+  "name": "Brian Samson",
+  "phone": "602.690.7930",
+  "email": "brian@briansamson.com",
+  "logo": "briansamson-logo-small.jpg",
+  "twitter": "samsonasu",
+  "github": "samsonasu",
+  "objective": "A challenging software engineering position either working independently or on a motivated, experienced, and intelligent team.",
+  "experience": [{
+    "company": "Brian Samson Software Consulting, LLC",
+    "title": "Owner",
+    "start": "March 2011",
+    "location": "Tempe, AZ",
+    "end": "Present",
+    "description": "Freelance software consulting for small and medium size businesses. I can develop almost anything you can imagine, from custom Android applications to full-featured web applications in Java, Ruby on Rails, PHP, or ASP.NET. As the principle owner, I take pride and responsibility in delivering nothing but the highest quality software to all my clients."
   },{
-    company: "Six Fried Rice",
-    title: "Software Engineer",
-    start: "May 2008",
-    end: "March 2011",
-    description: "<a href='http://www.sixfriedrice.com'>Six Fried Rice</a> is a very small custom software firm, and I am the lead Ruby on Rails developer. I work on a wide variety of different projects at once. I have close to 100% responsibility on about half of the projects and work with 1-2 other people on the rest. Our focus on custom software for small and medium businesses means that my responsibilities are far greater than just writing code. I regularly design (both graphically and architecturally) both front- and back-end systems, provide experience recommendations, integrate with 3rd party APIs, and also administer web and database servers."
+    "company": "Six Fried Rice",
+    "title": "Software Engineer",
+    "start": "May 2008",
+    "location": "Tempe, AZ",
+    "end": "March 2011",
+    "description": "<a href='http://www.sixfriedrice.com'>Six Fried Rice</a> is a small custom software firm, and I was the lead Rails developer. Our focus on custom software for small and medium businesses means that I was responsible for more than just writing code. I regularly designed (both graphically and architecturally) both front- and back-end systems, integrated with 3rd party APIs, and also administered web and database servers."
+  },{
+    "company": "Trimble Outdoors",
+    "title": "Software Engineer",
+    "location": "Tempe, AZ",
+    "start": "June 2006",
+    "end": "May 2008",
+    "description": "I was the lead developer of a 5-man team for <a href='http://www.trimbleoutdoors.com'>Trimble Outdoors'</a> 4 mobile Java applications. These apps are GPS-based and originally targeted J2ME, but have expanded to iOS and Android platforms. I wrote mostly Java for devices and C#.NET for the website, web services, and a related Windows desktop application. I also wrote and maintained a J2EE/JSF webapp to manage the build process."
+  },{
+    "company": "Arizona State University",
+    "title": "Technology Support Analyst, Sr",
+    "location": "Tempe, AZ",
+    "start": "Sep. 2001",
+    "end": "June 2006",
+    "description": "I started as a student worker at the e-mail helpdesk but rapidly rose to a Classified Staff position. I administered our MS Exchange server, helped customize and deploy ASU's first student webmail system, helped out on a huge variety of J2EE applications from student registration to Websphere and Tomcat app management. In '05-06 I led the team responsible for ASU's new student portal &quot;MyASU.&quot;"
+  }],
+  "education": [{
+    "degree": "BSE, Electrical Engineering",
+    "institution": "Arizona State University",
+    "location": "Tempe, AZ",
+    "date": "2004"
+  },{
+    "degree": "Diploma",
+    "institution": "O'Gorman High school",
+    "date": "1999",
+    "location": "Sioux Falls, SD"
+  }],
+  "skills": [{
+    "name":"ruby_on_rails",
+    "caption": "Ruby on Rails"
+  },{
+    "name":"sencha_touch",
+    "caption": "Sencha Touch"
+  },{
+    "name":"extjs",
+    "caption": "ExtJS"
+  },{
+    "name":"android",
+    "caption": "Android"
+  },{
+    "name":"java",
+    "caption": "Java"
+  },{
+    "name":"html5",
+    "caption": "HTML 5"
+  },{
+    "name":"mysql",
+    "caption": "MySQL"
+  },{
+    "name":"css",
+    "caption": "CSS"
+  },{
+    "name":"rss",
+    "caption": "Social Media"
+  },{
+    "name":"php",
+    "caption": "PHP"
+  },{
+    "name":"dotnet",
+    "caption": ".NET"
+  },{
+    "name": "apple",
+    "caption": "iOS"
   }]
-};
+}

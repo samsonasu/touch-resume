@@ -10,9 +10,33 @@ body {
 }
 .x-tabpanel > .x-panel-body .x-panel-body {
   text-shadow: rgba(255,255,255,.2) 0 1px 0;
-  padding: 10%;
+  padding: 16px;
   background: $white;
 }
+
+.x-list {
+  background: $white;
+  color: $base;
+}
+
+/* tab icons */
+
+.x-tab img.work, .x-button img.x-icon-mask.work {
+  -webkit-mask-image: url('../img/178-city.png');
+}
+
+.x-tab img.school, .x-button img.x-icon-mask.school {
+  -webkit-mask-image: url('../img/140-gradhat.png');
+}
+
+.x-tab img.wrench, .x-button img.x-icon-mask.wrench {
+  -webkit-mask-image: url('../img/157-wrench.png');
+}
+
+.x-tab img.chat, .x-button img.x-icon-mask.chat {
+  -webkit-mask-image: url('../img/08-chat.png');
+}
+
 
 h1 {
   text-align: center;
@@ -20,23 +44,31 @@ h1 {
   font-size: 36px;
   white-space: nowrap;
   font-weight: bold;
+  margin-bottom: 12px;
 }
 
 A, A:visited {
   color: $contrast;
+  text-decoration: none;
 }
 
 .contact {
   text-align: right;
   margin-top: 10px;
-  .phone {
-    background: url('../img/phone.png') 100% 2px no-repeat;
+  DIV {
     padding-right: 18px;
   }
-
+  .phone {
+    background: url('../img/phone.png') 100% 2px no-repeat;
+  }
   .email {
     background: url('../img/email.png') 100% 2px no-repeat;
-    padding-right: 18px;
+  }
+  .twitter {
+    background: url('../img/twitter.png') 100% 2px no-repeat;
+  }
+  .github {
+    background: url('../img/github.png') 100% 2px no-repeat;
   }
 }
 
@@ -56,6 +88,66 @@ DL.objective {
 
 }
 
+.experience {
+  .x-list-item-body {
+     SPAN.title {
+       font-weight: bold;
+     }
+
+     SPAN.company {
+       display: block;
+       font-size: 12px;
+     }
+   }
+ }
+
+ .education {
+   margin-top: 30%;
+   padding: 8px;
+   border-radius: 15px;
+   border: 2px solid $contrast;
+   text-align: center;
+   color: $dark;
+   .degree {
+     font-weight: bold;
+     font-size: 22px;
+   }
+
+   .institution {
+     font-size: 16px;
+   }
+
+   .location {
+     margin-top: 6px;
+     color: $light;
+     font-size: 16px;
+   }
+ }
+
+ .skills {
+   background: $white;
+   padding-top: 8px;
+   padding-left: 12px;
+   height: 100%;
+   .skill {
+      float: left;
+      font-size: 10px;
+      color: $dark;
+      width: 64px;
+      height: 76px;
+      margin: 0px 12px 24px 12px;
+      IMG {
+        max-height: 64px;
+        max-width: 64px;
+      }
+      SPAN {
+        width: 64px;
+        text-align: center;
+        display: block;
+        white-space: nowrap;
+      }
+   }
+ }
 
 /*fix for flickering slide animations */
 .x-panel {
@@ -63,13 +155,14 @@ DL.objective {
 }
 
 #splash {
-  position: fixed;
+  padding-top: 32px;
+  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background: url('../phone_startup.png') no-repeat 0 0;
+  background: url('../img/phone_startup.png') no-repeat 0 0;
   z-index: 1000;
-  font-size: 48px;
+  font-size: 24px;
   text-align: center;
 }

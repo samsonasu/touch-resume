@@ -7,72 +7,176 @@ body {
 /* line 11, ../sass/index.scss */
 .x-tabpanel > .x-panel-body .x-panel-body {
   text-shadow: rgba(255, 255, 255, 0.2) 0 1px 0;
-  padding: 10%;
+  padding: 16px;
   background: #fffaed;
 }
 
 /* line 17, ../sass/index.scss */
+.x-list {
+  background: #fffaed;
+  color: #879ac9;
+}
+
+/* tab icons */
+/* line 24, ../sass/index.scss */
+.x-tab img.work, .x-button img.x-icon-mask.work {
+  -webkit-mask-image: url("../img/178-city.png");
+}
+
+/* line 28, ../sass/index.scss */
+.x-tab img.school, .x-button img.x-icon-mask.school {
+  -webkit-mask-image: url("../img/140-gradhat.png");
+}
+
+/* line 32, ../sass/index.scss */
+.x-tab img.wrench, .x-button img.x-icon-mask.wrench {
+  -webkit-mask-image: url("../img/157-wrench.png");
+}
+
+/* line 36, ../sass/index.scss */
+.x-tab img.chat, .x-button img.x-icon-mask.chat {
+  -webkit-mask-image: url("../img/08-chat.png");
+}
+
+/* line 41, ../sass/index.scss */
 h1 {
   text-align: center;
   color: #242942;
   font-size: 36px;
   white-space: nowrap;
   font-weight: bold;
+  margin-bottom: 12px;
 }
 
-/* line 25, ../sass/index.scss */
+/* line 50, ../sass/index.scss */
 A, A:visited {
   color: #ff8800;
+  text-decoration: none;
 }
 
-/* line 29, ../sass/index.scss */
+/* line 55, ../sass/index.scss */
 .contact {
   text-align: right;
   margin-top: 10px;
 }
-/* line 32, ../sass/index.scss */
+/* line 58, ../sass/index.scss */
+.contact DIV {
+  padding-right: 18px;
+}
+/* line 61, ../sass/index.scss */
 .contact .phone {
   background: url("../img/phone.png") 100% 2px no-repeat;
-  padding-right: 18px;
 }
-/* line 37, ../sass/index.scss */
+/* line 64, ../sass/index.scss */
 .contact .email {
   background: url("../img/email.png") 100% 2px no-repeat;
-  padding-right: 18px;
+}
+/* line 67, ../sass/index.scss */
+.contact .twitter {
+  background: url("../img/twitter.png") 100% 2px no-repeat;
+}
+/* line 70, ../sass/index.scss */
+.contact .github {
+  background: url("../img/github.png") 100% 2px no-repeat;
 }
 
-/* line 43, ../sass/index.scss */
+/* line 75, ../sass/index.scss */
 DL.objective {
   margin-top: 20%;
   text-align: center;
 }
-/* line 46, ../sass/index.scss */
+/* line 78, ../sass/index.scss */
 DL.objective DT {
   font-weight: bold;
   display: block;
   color: #242942;
 }
-/* line 52, ../sass/index.scss */
+/* line 84, ../sass/index.scss */
 DL.objective DD {
   font-size: 14px;
   padding: 15px;
 }
 
+/* line 93, ../sass/index.scss */
+.experience .x-list-item-body SPAN.title {
+  font-weight: bold;
+}
+/* line 97, ../sass/index.scss */
+.experience .x-list-item-body SPAN.company {
+  display: block;
+  font-size: 12px;
+}
+
+/* line 104, ../sass/index.scss */
+.education {
+  margin-top: 30%;
+  padding: 8px;
+  border-radius: 15px;
+  border: 2px solid #ff8800;
+  text-align: center;
+  color: #242942;
+}
+/* line 111, ../sass/index.scss */
+.education .degree {
+  font-weight: bold;
+  font-size: 22px;
+}
+/* line 116, ../sass/index.scss */
+.education .institution {
+  font-size: 16px;
+}
+/* line 120, ../sass/index.scss */
+.education .location {
+  margin-top: 6px;
+  color: #d4dbff;
+  font-size: 16px;
+}
+
+/* line 127, ../sass/index.scss */
+.skills {
+  background: #fffaed;
+  padding-top: 8px;
+  padding-left: 12px;
+  height: 100%;
+}
+/* line 132, ../sass/index.scss */
+.skills .skill {
+  float: left;
+  font-size: 10px;
+  color: #242942;
+  width: 64px;
+  height: 76px;
+  margin: 0px 12px 24px 12px;
+}
+/* line 139, ../sass/index.scss */
+.skills .skill IMG {
+  max-height: 64px;
+  max-width: 64px;
+}
+/* line 143, ../sass/index.scss */
+.skills .skill SPAN {
+  width: 64px;
+  text-align: center;
+  display: block;
+  white-space: nowrap;
+}
+
 /*fix for flickering slide animations */
-/* line 61, ../sass/index.scss */
+/* line 153, ../sass/index.scss */
 .x-panel {
   -webkit-backface-visibility: hidden;
 }
 
-/* line 65, ../sass/index.scss */
+/* line 157, ../sass/index.scss */
 #splash {
-  position: fixed;
+  padding-top: 32px;
+  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background: url("../phone_startup.png") no-repeat 0 0;
+  background: url("../img/phone_startup.png") no-repeat 0 0;
   z-index: 1000;
-  font-size: 48px;
+  font-size: 24px;
   text-align: center;
 }
