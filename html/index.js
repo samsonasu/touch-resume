@@ -17,10 +17,21 @@ BS.ResumeApp = Ext.extend(Ext.TabPanel, {
     scroll: 'vertical'
   },
   initComponent: function() {
-    var data = BS.ResumeData
-    items: [{
+    //var data = BS.ResumeData;
+    this.items = [{
       title: 'Me',
-      autoLoad: 'about.html',
+      contentEl: 'myInfo',
+      //html: "This is about me!",
+//      html: {
+//        tag: 'div',
+//        cls: 'info',
+//        children: [{
+//          tag: 'h1',
+//          html: data.name
+//        },{
+//
+//        }]
+//      },
       iconCls: 'info',
       cls: 'card1'
     }, {
@@ -46,12 +57,11 @@ BS.ResumeApp = Ext.extend(Ext.TabPanel, {
       html: '<h1>User Card</h1>',
       cls: 'card5',
       iconCls: 'user'
-    }]
+    }];
 
     BS.ResumeApp.superclass.initComponent.call(this);
   }
-
-})
+});
 
 Ext.setup({
     icon: 'icon.png',
@@ -59,8 +69,6 @@ Ext.setup({
     phoneStartupScreen: 'phone_startup.png',
     glossOnIcon: false,
     onReady: function() {
-        var tabpanel = new Ext.TabPanel({
-            
-        });
+        var tabpanel = new BS.ResumeApp({});
     }
 });

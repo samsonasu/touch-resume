@@ -1,7 +1,8 @@
-{
+BS.ResumeData = {
   name: "Brian Samson",
   phone: "602.690.7930",
   email: 'brian@briansamson.com',
+  logo: 'briansamson-logo-small.jpg',
   objective: "A challenging software engineering position either working independently or on a motivated, experienced, and intelligent team.",
   experience: [{
     company: "Brian Samson Software Consulting, LLC",
