@@ -4,6 +4,11 @@ $base: #879AC9;
 $dark: #242942;
 $contrast: #FF8800;
 
+//fix for flickering slide animations
+.x-tabpanel > .x-panel-body .x-panel {
+    -webkit-backface-visibility: hidden;
+}
+
 body {
   background-color: $white;
   color: $base;
@@ -19,7 +24,7 @@ body {
   color: $base;
 }
 
-/* tab icons */
+ //tab icons
 
 .x-tab img.work, .x-button img.x-icon-mask.work {
   -webkit-mask-image: url('../img/178-city.png');
@@ -148,11 +153,6 @@ DL.objective {
       }
    }
  }
-
-/*fix for flickering slide animations */
-.x-panel {
-    -webkit-backface-visibility: hidden;
-}
 
 #splash {
   padding-top: 32px;

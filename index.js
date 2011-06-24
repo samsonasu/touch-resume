@@ -162,23 +162,8 @@ BS.ResumeApp = Ext.extend(Ext.TabPanel, {
     });
 
     return panel;
-  },
-  build_recommendation_tab: function() {
-
   }
 });
-
-
-Ext.regModel('Experience', {
-    fields: ['company', 'title', 'start', 'end', 'description']
-});
-Ext.regModel('Education', {
-    fields: ['degree', 'institution', 'date', 'description']
-});
-Ext.regModel('Skill', {
-    fields: ['name', 'caption', 'url']
-});
-
 
 Ext.setup({
   icon: 'icon.png',
@@ -192,15 +177,19 @@ Ext.setup({
         var data = Ext.decode(request.responseText);
         Ext.get('splash').hide();
         var tabpanel = new BS.ResumeApp({
-          resume_data: data,
-          listeners: {
-            afterlayout: function(p) {
-              debugger;
-              p.onResize();
-            }
-          }
+          resume_data: data
         });
       }
     });
   }
+});
+
+Ext.regModel('Experience', {
+    fields: ['company', 'title', 'start', 'end', 'description']
+});
+Ext.regModel('Education', {
+    fields: ['degree', 'institution', 'date', 'description']
+});
+Ext.regModel('Skill', {
+    fields: ['name', 'caption', 'url']
 });
