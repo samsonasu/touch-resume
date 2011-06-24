@@ -1,0 +1,19 @@
+{
+  name: "Brian Samson",
+  phone: "602.690.7930",
+  email: 'brian@briansamson.com',
+  objective: "A challenging software engineering position either working independently or on a motivated, experienced, and intelligent team.",
+  experience: [{
+    company: "Brian Samson Software Consulting, LLC",
+    title: "Owner",
+    start: "March 2011",
+    end: "Present",
+    description: "Freelance software consulting for small and medium size businesses. I can develop almost anything you can imagine, from custom Android applications to full-featured web applications in Java, Ruby on Rails, PHP, or ASP.NET. As the principle owner, I take pride and responsibility in delivering nothing but the highest quality software to all my clients."
+  },{
+    company: "Six Fried Rice",
+    title: "Software Engineer",
+    start: "May 2008",
+    end: "March 2011",
+    description: "<a href='http://www.sixfriedrice.com'>Six Fried Rice</a> is a very small custom software firm, and I am the lead Ruby on Rails developer. I work on a wide variety of different projects at once. I have close to 100% responsibility on about half of the projects and work with 1-2 other people on the rest. Our focus on custom software for small and medium businesses means that my responsibilities are far greater than just writing code. I regularly design (both graphically and architecturally) both front- and back-end systems, provide experience recommendations, integrate with 3rd party APIs, and also administer web and database servers."
+  }]
+};
