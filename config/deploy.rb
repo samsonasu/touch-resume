@@ -4,12 +4,9 @@ set :repository,  "git@github.com:samsonasu/touch-resume.git"
 set :scm, :git
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 
-role :web, "localhost"                          # Your HTTP server, Apache/etc
-role :app, "localhost"                          # This may be the same as your `Web` server
-role :db,  "localhost", :primary => true # This is where Rails migrations will run
+role :web, "briansamson.com"                          # Your HTTP server, Apache/etc
 
-
-set :deploy_to, "/var/www/"
+set :deploy_to, "/vhost/briansamson.com/touch-resume/"
 
 # if you're still using the script/reaper helper you will need
 # these http://github.com/rails/irs_process_scripts

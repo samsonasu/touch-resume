@@ -1,0 +1,75 @@
+$white: #FFFAED;
+$light: #D4DBFF;
+$base: #879AC9;
+$dark: #242942;
+$contrast: #FF8800;
+
+body {
+  background-color: $white;
+  color: $base;
+}
+.x-tabpanel > .x-panel-body .x-panel-body {
+  text-shadow: rgba(255,255,255,.2) 0 1px 0;
+  padding: 10%;
+  background: $white;
+}
+
+h1 {
+  text-align: center;
+  color: $dark;
+  font-size: 36px;
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+A, A:visited {
+  color: $contrast;
+}
+
+.contact {
+  text-align: right;
+  margin-top: 10px;
+  .phone {
+    background: url('../img/phone.png') 100% 2px no-repeat;
+    padding-right: 18px;
+  }
+
+  .email {
+    background: url('../img/email.png') 100% 2px no-repeat;
+    padding-right: 18px;
+  }
+}
+
+DL.objective {
+  margin-top: 20%;
+  text-align: center;
+  DT {
+    font-weight: bold;
+    display: block;
+    color: $dark;
+  }
+
+  DD {
+    font-size: 14px;
+    padding: 15px;
+  }
+
+}
+
+
+/*fix for flickering slide animations */
+.x-panel {
+    -webkit-backface-visibility: hidden;
+}
+
+#splash {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url('../phone_startup.png') no-repeat 0 0;
+  z-index: 1000;
+  font-size: 48px;
+  text-align: center;
+}

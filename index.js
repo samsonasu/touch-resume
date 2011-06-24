@@ -17,24 +17,8 @@ BS.ResumeApp = Ext.extend(Ext.TabPanel, {
     scroll: 'vertical'
   },
   initComponent: function() {
-    //var data = BS.ResumeData;
-    this.items = [{
-      title: 'Me',
-      contentEl: 'myInfo',
-      //html: "This is about me!",
-//      html: {
-//        tag: 'div',
-//        cls: 'info',
-//        children: [{
-//          tag: 'h1',
-//          html: data.name
-//        },{
-//
-//        }]
-//      },
-      iconCls: 'info',
-      cls: 'card1'
-    }, {
+    this.load_data();
+    this.items = [this.build_me_tab(), {
       title: 'Favorites',
       html: '<h1>Favorites Card</h1>',
       iconCls: 'favorites',
@@ -60,6 +44,45 @@ BS.ResumeApp = Ext.extend(Ext.TabPanel, {
     }];
 
     BS.ResumeApp.superclass.initComponent.call(this);
+  },
+  load_data: function() {
+    this.resume_data = BS.ResumeData;
+  },
+  build_me_tab: function() {
+    return new Ext.Panel({
+      title: 'Me',
+      html: {
+        tag: 'div',
+        cls: 'info',
+        children: [{
+          tag: 'h1',
+          html: this.resume_data.name
+        },{
+          tag: 'div',
+          cls: 'contact',
+          children: [{
+            tag: 'div',
+            cls: 'phone',
+            html: "<a href='tel:" + this.resume_data.phone + "'>" + this.resume_data.phone + "</a>"
+          },{
+            tag: 'div',
+            cls: 'email',
+            html: "<a href='mailto:" + this.resume_data.email + "'>" + this.resume_data.email + "</a>"
+          }]
+        },{
+          tag: 'dl',
+          cls: 'objective',
+          children: [{
+            tag: 'dt',
+            html: "Objective"
+          }, {
+            tag: 'dd',
+            html: this.resume_data.objective
+          }]
+        }]
+      },
+      iconCls: 'info'
+    });
   }
 });
 
@@ -69,6 +92,7 @@ Ext.setup({
     phoneStartupScreen: 'phone_startup.png',
     glossOnIcon: false,
     onReady: function() {
+        Ext.get('splash').hide();
         var tabpanel = new BS.ResumeApp({});
     }
 });

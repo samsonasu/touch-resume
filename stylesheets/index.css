@@ -1,0 +1,78 @@
+/* line 7, ../sass/index.scss */
+body {
+  background-color: #fffaed;
+  color: #879ac9;
+}
+
+/* line 11, ../sass/index.scss */
+.x-tabpanel > .x-panel-body .x-panel-body {
+  text-shadow: rgba(255, 255, 255, 0.2) 0 1px 0;
+  padding: 10%;
+  background: #fffaed;
+}
+
+/* line 17, ../sass/index.scss */
+h1 {
+  text-align: center;
+  color: #242942;
+  font-size: 36px;
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+/* line 25, ../sass/index.scss */
+A, A:visited {
+  color: #ff8800;
+}
+
+/* line 29, ../sass/index.scss */
+.contact {
+  text-align: right;
+  margin-top: 10px;
+}
+/* line 32, ../sass/index.scss */
+.contact .phone {
+  background: url("../img/phone.png") 100% 2px no-repeat;
+  padding-right: 18px;
+}
+/* line 37, ../sass/index.scss */
+.contact .email {
+  background: url("../img/email.png") 100% 2px no-repeat;
+  padding-right: 18px;
+}
+
+/* line 43, ../sass/index.scss */
+DL.objective {
+  margin-top: 20%;
+  text-align: center;
+}
+/* line 46, ../sass/index.scss */
+DL.objective DT {
+  font-weight: bold;
+  display: block;
+  color: #242942;
+}
+/* line 52, ../sass/index.scss */
+DL.objective DD {
+  font-size: 14px;
+  padding: 15px;
+}
+
+/*fix for flickering slide animations */
+/* line 61, ../sass/index.scss */
+.x-panel {
+  -webkit-backface-visibility: hidden;
+}
+
+/* line 65, ../sass/index.scss */
+#splash {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url("../phone_startup.png") no-repeat 0 0;
+  z-index: 1000;
+  font-size: 48px;
+  text-align: center;
+}
