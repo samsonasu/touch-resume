@@ -1,10 +1,12 @@
 set :application, "touch-resume"
-set :repository,  "git@github.com:samsonasu/touch-resume.git"
-
+set :repository,  "http://github.com/samsonasu/touch-resume.git"
+set :use_sudo, false
+set :user, 'bsamson'
 set :scm, :git
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 
 role :web, "briansamson.com"                          # Your HTTP server, Apache/etc
+role :app, "briansamson.com"
 
 set :deploy_to, "/u/apps/touch-resume"
 
@@ -12,10 +14,8 @@ set :deploy_to, "/u/apps/touch-resume"
 # these http://github.com/rails/irs_process_scripts
 
 # If you are using Passenger mod_rails uncomment this:
-# namespace :deploy do
-#   task :start do ; end
-#   task :stop do ; end
-#   task :restart, :roles => :app, :except => { :no_release => true } do
-#     run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
-#   end
-# end
+namespace :deploy do
+   task :start do ; end
+   task :stop do ; end
+   task :restart do ; end
+end
