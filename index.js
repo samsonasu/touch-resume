@@ -27,8 +27,11 @@ BS.ResumeApp = Ext.extend(Ext.TabPanel, {
       this.build_education_tab(),
       this.build_skills_tab()
     ];
-
+    
     BS.ResumeApp.superclass.initComponent.call(this);
+  },
+  link_html: function(text, url) {
+    return "<a target='_BLANK' href='" + url + "'>" + text + "</a>"
   },
   build_me_tab: function() {
     return new Ext.Panel({
